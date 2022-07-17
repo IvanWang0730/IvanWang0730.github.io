@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>星座查询</title>
+</head>
+ 
+<body>
+<p align="center">
+	请输入一个生日值（如：0123）：
+	<input type="text" id="t1">	
+	<input type="button" value="显示星座" onclick="show()"/>
+</p>
+ 
+<script>
+	function show(){
+	var c1=document.getElementById("t1").value;    //获取文本框中的值
+	//alert(c1);
+	var month=c1.substring(0,2);
+	var day=parseInt(c1.substring(2));
+	switch(month){
+		case "01":
+			if(day>19){alert("水瓶座")}
+			else alert("摩羯座");
+			break;
+		case "02":
+			if(day>18){alert("双鱼座")}
+			else alert("水瓶座");
+			break;
+		case "03":
+			if(day>20){alert("白羊座")}
+			else alert("双鱼座");
+			break;
+		case "04":
+			if(day>19){alert("金牛座")}
+			else alert("白羊座");
+			break;
+		case "05":
+			if(day>20){alert("双子座")}
+			else alert("金牛座");
+			break;
+		case "06":
+			if(day>21){alert("巨蟹座")}
+			else alert("双子座");
+			break;
+		case "07":
+			if(day>22){alert("狮子座")}
+			else alert("巨蟹座");
+			break;
+		case "08":
+			if(day>22){alert("处女座")}
+			else alert("狮子座");
+			break;
+		case "09":
+			if(day>22){alert("天秤座")}
+			else alert("处女座");
+			break;
+		case "10":
+			if(day>23){alert("天蝎座")}
+			else alert("天秤座");
+			break;
+		case "11":
+			if(day>20){alert("射手座")}
+			else alert("天蝎座");
+			break;
+		case "12":
+			if(day>21){alert("摩羯座")}
+			else alert("射手座");
+			break;
+			
+	}
+}
+	
+</script>
+</body>
+</html>
